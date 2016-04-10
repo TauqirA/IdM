@@ -445,4 +445,5 @@ if __name__ == "__main__":
     print(len(a.current_word_list), 'out of', len(word_list))
     print(a.debug)
     win.postscript(file="image.eps", colormode='color')
+    win.getMouse()
     win.close()
