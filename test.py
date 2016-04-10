@@ -374,7 +374,7 @@ class Word(object):
 
 
 if __name__ == "__main__":
-    sentences = retreive_sumy("http://www.nytimes.com/2016/04/10/us/politics/wyoming-colorado-voting-bernie-sanders-hillary-clinton-ted-cruz-donald-trump.html?_r=0")
+    sentences = retreive_sumy(sys.argv[1])
     word_list = []
     for sentence in (sentences):
         rake = rk.Rake("SmartStoplist.txt")   
@@ -435,10 +435,15 @@ if __name__ == "__main__":
             t.draw(win)
             x1 = x1 + inc
 
+    
+    #################
+    leg = a.legend()
+    print(leg)
+    f = open('legend.txt', 'w')
+    f.write(leg)
+    f.close()
+    print(len(a.current_word_list), 'out of', len(word_list))
+    print(a.debug)
     win.postscript(file="image.eps", colormode='color')
     win.getMouse()
     win.close()
-    #################
-    print(a.legend())
-    print(len(a.current_word_list), 'out of', len(word_list))
-    print(a.debug)
