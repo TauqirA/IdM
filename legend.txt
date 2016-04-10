@@ -1,29 +1,20 @@
-1. (1,1) across: These holes may _ pull mass from their neighboring star, growing the black hole and shrinking the other star, until the black hole is large and the companion star has completely vanished.
-2. (2,1) down: Located about 32 million light-years from Earth in the Messier 74 galaxy (M74), this _ emits periodic bursts of x-rays at a rate that suggests it is much larger than a stellar-mass black hole but significantly smaller than the supermassive black holes found at the centers of galaxies.
-3. (5,3) across: With no force to check gravity, a _ black hole shrinks to zero volumeat which point it is infinitely dense.
-4. (10,1) down: Yet scientists have confirmed their _ suspicions that they exist.
-5. (4,7) across: _ large black holes may exist at the center of some galaxiesincluding our own Milky Way.
-6. (8,6) down: This is typically done by _ mass in a region of the sky and looking for areas of large, dark mass.
-7. (3,11) across: When they reach a point of no return they are said to have entered the event horizon the point from which any escape is impossible because it _ moving faster than the speed of light.
-8. (2,13) across: Few such _ black holes have been discovered, and scientists aren't sure how they form.
-9. (13,2) down: These "tunnels" could allow _ travel through space and timebut there is no evidence that they exist.
-10. (6,10) down: In younger stars, _ fusion creates energy and a constant outward pressure that exists in balance with the inward pull of gravity caused by the star's own mass.
-11. (16,2) down: Black holes are the cold remnants of former stars, so dense that no matternot even lightis able to escape their _ gravitational pull.
-12. (13,5) across: Even the light from such a star is unable to escape its _ gravitational pull.
-13. (10,9) across: Because they are so small, distant, and dark, black holes cannot be _ observed.
-14. (19,1) down: Such an explosion scatters most of a star into the void of space but leaves behind a large "cold" remnant on which fusion no _ takes place.
-15. (4,16) across: But in the dead remnants of a massive supernova, no _ opposes gravityso the star begins to collapse in upon itself.
-16. (14,9) down: Astronomers think the object shown in this _ X-ray Observatory image (in box) may be an elusive intermediate-mass black hole.
-17. (12,11) across: A _ hole with a mass equal to that of the sun would have a two-mile (three-kilometer) radius.
-17. (12,11) across: _ holes pull matter and even energy into themselvesbut no more so than other stars or cosmic objects of similar mass.
-17. (12,11) across: _ holes are small in size.
-17. (12,11) across: _ holes capture the public's imagination and feature prominently in extremely theoretical concepts like wormholes .
-17. (12,11) across: Planets, light, and other matter must pass close to a _ hole in order to be pulled into its grasp.
-17. (12,11) across: The star's own light becomes trapped in orbit, and the dark star becomes known as a _ hole.
-17. (12,11) across: That means that a _ hole with the mass of our own sun would not "suck" objects into it any more than our own sun does with its own gravitational pull.
-18. (12,15) across: They are similar to _ black holes but grow to enormous size because there is so much matter in the center of the galaxy for them to add.
-18. (12,15) down: While most _ end up as white dwarfs or neutron _ , black holes are the last evolutionary stage in the lifetimes of enormous _ that had been at least 10 or 15 times as massive as our own sun.
-19. (10,17) across: When _ stars reach the final stages of their lives they often detonate in cataclysms known as supernovae .
-20. (16,13) down: A _-solar-mass hole, like that believed to be at the center of some galaxies, would have a radius of just about two _ miles (three _ kilometers)only about four times the size of the sun.
-21. (18,12) down: Black holes can _ limitless amounts of matter; they simply become even denser as their mass increases.
-22. (14,19) across: Many black holes exist in _ star systems .
+1. (1,1) down: _ large black holes may exist at the center of some galaxiesincluding our own Milky Way.
+2. (3,3) across: Astronomers think the object shown in this _ X-ray Observatory image (in box) may be an elusive intermediate-mass black hole.
+3. (1,6) across: Few such _ black holes have been discovered, and scientists aren't sure how they form.
+4. (7,1) down: With no force to check gravity, a _ black hole shrinks to zero volumeat which point it is infinitely dense.
+4. (7,1) across: Many black holes exist in _ star systems .
+5. (4,6) down: Because they are so small, distant, and dark, black holes cannot be _ observed.
+6. (1,12) across: In younger stars, _ fusion creates energy and a constant outward pressure that exists in balance with the inward pull of gravity caused by the star's own mass.
+7. (6,10) down: They are similar to _ black holes but grow to enormous size because there is so much matter in the center of the galaxy for them to add.
+8. (1,15) across: Black holes can _ limitless amounts of matter; they simply become even denser as their mass increases.
+9. (6,14) across: Such an explosion scatters most of a star into the void of space but leaves behind a large "cold" remnant on which fusion no _ takes place.
+10. (10,10) down: But in the dead remnants of a massive supernova, no _ opposes gravityso the star begins to collapse in upon itself.
+11. (9,11) across: Black holes are the cold remnants of former stars, so dense that no matternot even lightis able to escape their _ gravitational pull.
+12. (4,18) across: Located about 32 million light-years from Earth in the Messier 74 galaxy (M74), this _ emits periodic bursts of x-rays at a rate that suggests it is much larger than a stellar-mass black hole but significantly smaller than the supermassive black holes found at the centers of galaxies.
+13. (9,14) down: When _ stars reach the final stages of their lives they often detonate in cataclysms known as supernovae .
+14. (11,14) down: These "tunnels" could allow _ travel through space and timebut there is no evidence that they exist.
+15. (16,10) down: Planets, light, and other matter must pass close to a _ hole in order to be pulled into its grasp.
+15. (16,10) down: _ holes capture the public's imagination and feature prominently in extremely theoretical concepts like wormholes .
+15. (16,10) down: A _ hole with a mass equal to that of the sun would have a two-mile (three-kilometer) radius.
+15. (16,10) down: _ holes pull matter and even energy into themselvesbut no more so than other stars or cosmic objects of similar mass.
+16. (11,17) across: Even the light from such a star is unable to escape its _ gravitational pull.

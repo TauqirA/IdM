@@ -272,7 +272,15 @@ class Crossword(object):
         for r in range(self.rows):
             for c in self.grid[r]:
                 outStr += '%s ' % c
-            outStr += '\n'
+            outStr += '\n '
+        return outStr
+    
+    def solution2(self): # return solution grid
+        outStr = ""
+        for r in range(self.rows):
+            for c in self.grid[r]:
+                outStr += '%s#' % c
+            outStr += '\n#'
         return outStr
  
     def word_find(self): # return solution grid
@@ -393,7 +401,8 @@ if __name__ == "__main__":
 	a = Crossword(20, 20, '-', 5000, word_list)
 	a.compute_crossword(2)
     print(a.word_bank())
-    print(a.solution())
+    solution = a.solution()
+    print(" "+solution)
     print(a.word_find())
     print(a.display())
     #################
@@ -450,5 +459,53 @@ if __name__ == "__main__":
     print(len(a.current_word_list), 'out of', len(word_list))
     print(a.debug)
     ps = win.postscript(file="image.eps", colormode='color')
+    
+    win.getMouse()   
+    win.close()
+    #################
+    BOX = 600
+    string2 = solution
+    strings2 = string2.split(" ")
+    chars2 = strings2
+    sizestring2 = string2.split(" \n", 1)[0]
+    size = len(sizestring2.split(" "))
+    win = GraphWin("CrossWord Puzzle", BOX, BOX)
+    
+    x1 = 0
+    y1 = 0
+    inc = BOX/size
+    count = 1
+
+    for c in chars2:
+        r = Rectangle(Point(x1,y1), Point(x1+inc,y1+inc))
+        r.setOutline("white")
+        if c == "-":
+            r.setFill("black")
+            r.draw(win)
+            x1 = x1 + inc
+
+        elif c == " ":
+            r.setFill("white")
+            r.setOutline("red")
+
+            r.draw(win)
+            x1 = x1 + inc
+
+        elif c == "\n":
+            x1 = 0
+            y1 = count*inc
+            count = count + 1
+        else:
+            t = Text(r.getCenter(), c)
+            t.setTextColor("red")
+            r.setOutline("red")
+
+            r.setFill("white")
+            r.draw(win)
+            t.draw(win)
+            x1 = x1 + inc
+    
+    #################
+    ps= win.postscript(file="sol.eps", colormode='color')
     win.getMouse()   
     win.close()
