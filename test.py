@@ -9,6 +9,7 @@ from sumy.summarizers.lsa import LsaSummarizer as Summarizer
 from sumy.nlp.stemmers import Stemmer
 from sumy.utils import get_stop_words
 import random, re, time, string
+from graphics import *
 from copy import copy as duplicate
  
 
@@ -310,6 +311,24 @@ class Crossword(object):
  
         outStr = re.sub(r'[a-z]', ' ', outStr)
         return outStr
+
+    def display2(self, order=False): # return (and order/number wordlist) the grid minus the words adding the numbers
+        outStr = ""
+        if order:
+            self.order_number_words()
+ 
+        copy = self
+ 
+        for word in self.current_word_list:
+            copy.set_cell(word.col, word.row, word.number)
+ 
+        for r in range(copy.rows):
+            for c in copy.grid[r]:
+                outStr += '%s' % c
+            outStr += '\n'
+ 
+        outStr = re.sub(r'[a-z]', ' ', outStr)
+        return outStr
  
     def word_bank(self): 
         outStr = ''
@@ -369,10 +388,57 @@ if __name__ == "__main__":
         print(word+": "+ clue)
 	a = Crossword(13, 13, '-', 5000, word_list)
 	a.compute_crossword(2)
-	print(a.word_bank())
-	print(a.solution())
-	print(a.word_find())
-	print(a.display())
-	print(a.legend())
-	print(len(a.current_word_list), 'out of', len(word_list))
-	print(a.debug)
+    print(a.word_bank())
+    print(a.solution())
+    print(a.word_find())
+    print(a.display())
+    #################
+    BOX = 600
+    string = a.display2()
+    strings = string.split(" \n")
+    chars = string
+    sizestring = string.split("\n", 1)[0]
+    size = len(sizestring)           
+    win = GraphWin("CrossWord Puzzle", BOX, BOX)
+    
+    x1 = 0
+    y1 = 0
+    inc = BOX/size
+    count = 1
+    for c in chars:
+        r = Rectangle(Point(x1,y1), Point(x1+inc,y1+inc))
+        r.setOutline("white")
+        if c == "-":
+            r.setFill("black")
+            r.draw(win)
+            x1 = x1 + inc
+
+        elif c == " ":
+            r.setFill("white")
+            r.setOutline("red")
+
+            r.draw(win)
+            x1 = x1 + inc
+
+        elif c == "\n":
+            x1 = 0
+            y1 = count*inc
+            count = count + 1
+        else:
+            t = Text(r.getCenter(), c)
+            t.setTextColor("red")
+            r.setOutline("red")
+
+            r.setFill("white")
+            #t.draw(r)
+            r.draw(win)
+            t.draw(win)
+            x1 = x1 + inc
+
+    win.postscript(file="image.eps", colormode='color')
+    win.getMouse()
+    win.close()
+    #################
+    print(a.legend())
+    print(len(a.current_word_list), 'out of', len(word_list))
+    print(a.debug)
