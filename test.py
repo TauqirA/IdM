@@ -11,11 +11,11 @@ from sumy.utils import get_stop_words
 import random, re, time, string
 from graphics import *
 from copy import copy as duplicate
- 
+
 
 
 LANGUAGE = "english"
-SENTENCES_COUNT = 10
+SENTENCES_COUNT = 30
   
 def retreive_sumy(url):
     # "http://en.wikipedia.org/wiki/Automatic_summarization"
@@ -324,8 +324,8 @@ class Crossword(object):
  
         for r in range(copy.rows):
             for c in copy.grid[r]:
-                outStr += '%s' % c
-            outStr += '\n'
+                outStr += '%s#' % c
+            outStr += '\n#'
  
         outStr = re.sub(r'[a-z]', ' ', outStr)
         return outStr
@@ -386,7 +386,7 @@ if __name__ == "__main__":
         clue = pattern.sub("_", clue)
         word_list.append([word,clue])
         print(word+": "+ clue)
-	a = Crossword(13, 13, '-', 5000, word_list)
+	a = Crossword(20, 20, '-', 5000, word_list)
 	a.compute_crossword(2)
     print(a.word_bank())
     print(a.solution())
@@ -395,10 +395,12 @@ if __name__ == "__main__":
     #################
     BOX = 600
     string = a.display2()
-    strings = string.split(" \n")
-    chars = string
-    sizestring = string.split("\n", 1)[0]
-    size = len(sizestring)           
+    print(string)
+    strings = string.split("#")
+    chars = strings
+    sizestring = string.split("#\n", 1)[0]
+    size = len(sizestring.split("#"))
+    print(chars)
     win = GraphWin("CrossWord Puzzle", BOX, BOX)
     
     x1 = 0
