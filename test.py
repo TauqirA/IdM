@@ -11,11 +11,15 @@ from sumy.utils import get_stop_words
 import random, re, time, string
 from graphics import *
 from copy import copy as duplicate
-
-
+##import Tkinter as tk
+##import subprocess
+##import os
+##import io
+##from PIL import Image, ImageDraw
+#from PIL import Image
 
 LANGUAGE = "english"
-SENTENCES_COUNT = 30
+SENTENCES_COUNT = 20
   
 def retreive_sumy(url):
     # "http://en.wikipedia.org/wiki/Automatic_summarization"
@@ -407,6 +411,7 @@ if __name__ == "__main__":
     y1 = 0
     inc = BOX/size
     count = 1
+
     for c in chars:
         r = Rectangle(Point(x1,y1), Point(x1+inc,y1+inc))
         r.setOutline("white")
@@ -432,11 +437,9 @@ if __name__ == "__main__":
             r.setOutline("red")
 
             r.setFill("white")
-            #t.draw(r)
             r.draw(win)
             t.draw(win)
             x1 = x1 + inc
-
     
     #################
     leg = a.legend()
@@ -446,6 +449,6 @@ if __name__ == "__main__":
     f.close()
     print(len(a.current_word_list), 'out of', len(word_list))
     print(a.debug)
-    win.postscript(file="image.eps", colormode='color')
-    win.getMouse()
+    ps = win.postscript(file="image.eps", colormode='color')
+    win.getMouse()   
     win.close()
